@@ -884,6 +884,17 @@ section {
   box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
 
+.feature-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.feature-link:hover h4 {
+  color: var(--accent);
+}
+
 .feature-item .number {
   font-size: 3.5rem;
   font-weight: 800;
