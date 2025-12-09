@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://appsyncinnovations.com/sitemap.xml
+
+# Disallow admin or private paths (if any)
+Disallow: /admin/
+Disallow: /private/
