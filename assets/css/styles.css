@@ -178,6 +178,23 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+  position: relative;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
 }
 
 .logo {
@@ -1884,6 +1901,45 @@ footer::after {
 }
 
 @media (max-width: 768px) {
+  .nav-center {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 24px;
+    gap: 8px;
+    box-shadow: var(--shadow-lg);
+    transform: translateX(-100%);
+    transition: var(--transition);
+    overflow-y: auto;
+    z-index: 999;
+  }
+  
+  .nav-center.active {
+    transform: translateX(0);
+  }
+  
+  .nav-right {
+    display: none;
+  }
+  
+  .nav-center.active ~ .nav-right,
+  .nav-links.active ~ .nav-right {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 24px;
+    background: var(--white);
+    border-top: 1px solid rgba(50, 32, 99, 0.1);
+    z-index: 1000;
+  }
+  
   .nav-links {
     position: fixed;
     top: 70px;
