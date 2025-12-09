@@ -423,7 +423,8 @@ nav {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 120px;
+  margin-top: 0;
   background: linear-gradient(135deg, #f8f9fc 0%, #ebe8f5 50%, #e8e4f3 100%);
   position: relative;
   overflow: hidden;
@@ -732,14 +733,14 @@ section {
 
 .service-card {
   background: var(--white);
-  padding: 40px 32px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
+  padding: 44px 36px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(50, 32, 99, 0.08);
   transition: var(--transition);
   text-align: left;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(50, 32, 99, 0.05);
+  border: 1px solid rgba(50, 32, 99, 0.06);
 }
 
 .service-card::before {
@@ -749,10 +750,22 @@ section {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
   transform: scaleX(0);
   transition: var(--transition);
   transform-origin: left;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, rgba(50, 32, 99, 0.03), transparent);
+  border-radius: 0 24px 0 100%;
+  transition: var(--transition);
 }
 
 .service-card:hover::before {
@@ -760,26 +773,41 @@ section {
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-xl);
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(50, 32, 99, 0.15);
+  border-color: rgba(108, 92, 231, 0.15);
 }
 
 .service-card .icon {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, rgba(50, 32, 99, 0.08), rgba(108, 92, 231, 0.08));
-  border-radius: 16px;
+  width: 76px;
+  height: 76px;
+  background: linear-gradient(135deg, rgba(50, 32, 99, 0.06), rgba(108, 92, 231, 0.08));
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
-  font-size: 2rem;
+  margin-bottom: 28px;
+  font-size: 2.2rem;
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+}
+
+.service-card .icon::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 22px;
+  opacity: 0;
+  z-index: -1;
   transition: var(--transition);
 }
 
 .service-card:hover .icon {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 12px 30px rgba(50, 32, 99, 0.3);
 }
 
 .service-card:hover .icon-text {
@@ -841,17 +869,19 @@ section {
 
 .feature-item {
   text-align: center;
-  padding: 40px 30px;
-  background: rgba(255,255,255,0.05);
-  border-radius: var(--radius-lg);
+  padding: 48px 36px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 24px;
   backdrop-filter: blur(10px);
   transition: var(--transition);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.12);
 }
 
 .feature-item:hover {
-  background: rgba(255,255,255,0.1);
-  transform: translateY(-5px);
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-8px);
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
 
 .feature-item .number {
@@ -944,13 +974,14 @@ section {
 
 .testimonial-card {
   background: var(--white);
-  padding: 40px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
+  padding: 44px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(50, 32, 99, 0.08);
   margin: 15px;
   transition: var(--transition);
-  border: 1px solid rgba(50, 32, 99, 0.05);
+  border: 1px solid rgba(50, 32, 99, 0.06);
   position: relative;
+  overflow: hidden;
 }
 
 .testimonial-card::before {
@@ -958,27 +989,43 @@ section {
   position: absolute;
   top: 20px;
   left: 30px;
-  font-size: 6rem;
-  color: var(--primary);
-  opacity: 0.1;
+  font-size: 7rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.15;
   font-family: Georgia, serif;
   line-height: 1;
 }
 
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, transparent, rgba(108, 92, 231, 0.05));
+  border-radius: 100% 0 24px 0;
+}
+
 .testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(50, 32, 99, 0.12);
+  border-color: rgba(108, 92, 231, 0.15);
 }
 
 .testimonial-stars {
   display: flex;
-  gap: 4px;
-  margin-bottom: 20px;
+  gap: 6px;
+  margin-bottom: 24px;
 }
 
 .testimonial-stars span {
   color: var(--accent-gold);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  text-shadow: 0 2px 8px rgba(241, 196, 15, 0.3);
 }
 
 .testimonial-card .quote {
@@ -997,9 +1044,9 @@ section {
 }
 
 .testimonial-card .author-avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   display: flex;
   align-items: center;
@@ -1007,6 +1054,7 @@ section {
   color: var(--white);
   font-weight: 700;
   font-size: 1.2rem;
+  box-shadow: 0 8px 20px rgba(50, 32, 99, 0.25);
 }
 
 .testimonial-card .author-info h4 {
@@ -1021,7 +1069,7 @@ section {
 }
 
 footer {
-  background: linear-gradient(180deg, var(--dark) 0%, #12121f 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: var(--white);
   padding: 100px 0 40px;
   position: relative;
@@ -1034,8 +1082,8 @@ footer::before {
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--secondary), var(--accent), transparent);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), var(--secondary), transparent);
 }
 
 footer::after {
@@ -1045,7 +1093,7 @@ footer::after {
   right: -10%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(108, 92, 231, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
   pointer-events: none;
 }
 
