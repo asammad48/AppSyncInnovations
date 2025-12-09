@@ -1806,7 +1806,7 @@ footer::after {
 
 .scroll-to-top {
   position: fixed;
-  bottom: 240px;
+  bottom: 160px;
   right: 24px;
   width: 48px;
   height: 48px;
@@ -2039,7 +2039,7 @@ footer::after {
 
   .scroll-to-top {
     right: 12px;
-    bottom: 220px;
+    bottom: 140px;
     width: 42px;
     height: 42px;
   }
