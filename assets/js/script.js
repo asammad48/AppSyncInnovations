@@ -139,30 +139,57 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  const langSwitcher = document.getElementById('langSwitcher');
-  if (langSwitcher) {
-    langSwitcher.addEventListener('change', function() {
-      const lang = this.value;
-      const currentPath = window.location.pathname;
-      let newPath;
-      
-      const pathParts = currentPath.split('/').filter(p => p);
-      const langs = ['es', 'fr', 'pt', 'ca', 'ar', 'ur'];
-      
-      if (langs.includes(pathParts[0])) {
-        pathParts.shift();
+  const langDropdown = document.querySelector('.lang-dropdown');
+  const langCurrentBtn = document.getElementById('langCurrentBtn');
+  const langOptions = document.getElementById('langOptions');
+  
+  if (langDropdown && langCurrentBtn && langOptions) {
+    langCurrentBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle('open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!langDropdown.contains(e.target)) {
+        langDropdown.classList.remove('open');
       }
-      
-      if (lang === 'en') {
-        newPath = '/' + pathParts.join('/');
-      } else {
-        newPath = '/' + lang + '/' + pathParts.join('/');
-      }
-      
-      if (newPath === '/') newPath = '/';
-      else if (!newPath.endsWith('/')) newPath += '/';
-      
-      window.location.href = newPath;
+    });
+    
+    const langOptionItems = langOptions.querySelectorAll('li');
+    langOptionItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const lang = this.dataset.lang;
+        const url = this.dataset.url;
+        const flag = this.querySelector('.lang-flag').textContent;
+        
+        langOptionItems.forEach(li => li.classList.remove('active'));
+        this.classList.add('active');
+        
+        langCurrentBtn.querySelector('.lang-flag').textContent = flag;
+        langCurrentBtn.querySelector('.lang-name').textContent = lang.toUpperCase();
+        
+        langDropdown.classList.remove('open');
+        
+        const currentPath = window.location.pathname;
+        const pathParts = currentPath.split('/').filter(p => p);
+        const langs = ['es', 'fr', 'pt', 'ca', 'ar', 'ur'];
+        
+        if (langs.includes(pathParts[0])) {
+          pathParts.shift();
+        }
+        
+        let newPath;
+        if (lang === 'en') {
+          newPath = '/' + pathParts.join('/');
+        } else {
+          newPath = '/' + lang + '/' + pathParts.join('/');
+        }
+        
+        if (newPath === '/') newPath = '/';
+        else if (!newPath.endsWith('/')) newPath += '/';
+        
+        window.location.href = newPath;
+      });
     });
   }
 
