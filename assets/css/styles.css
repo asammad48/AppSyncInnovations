@@ -320,6 +320,12 @@ nav {
   position: relative;
 }
 
+.dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
 .dropdown > a::after {
   content: '';
   display: inline-block;
@@ -330,6 +336,7 @@ nav {
   transform: rotate(45deg) translateY(-2px);
   margin-left: 6px;
   transition: var(--transition);
+  flex-shrink: 0;
 }
 
 .dropdown:hover > a::after {
