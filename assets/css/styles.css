@@ -811,7 +811,7 @@ section {
 }
 
 .service-card:hover .icon-text {
-  filter: grayscale(1) brightness(10);
+  filter: brightness(1.2);
 }
 
 .service-card h3 {
