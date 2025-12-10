@@ -1,0 +1,94 @@
+Create a fully responsive professional Data Optimization, Data Security & Database Maintenance webpage using pure HTML5 and CSS3 only.
+
+URL RULE:
+- English must be root: /data-security-db-maintenance/
+- Other languages inside their language folders
+- No .html URLs allowed.
+
+META SEO:
+- Title: Data Security & Database Maintenance Services | Secure IT Infrastructure
+- Meta Description
+- Canonical URL
+- Viewport
+- Index, Follow
+
+SOCIAL SEO:
+- Open Graph
+- Twitter Card
+
+SCHEMA JSON-LD:
+- ITService
+- LocalBusiness
+- FAQPage
+
+PAGE SECTIONS:
+
+1. Animated Loader
+2. Professional Header Navigation
+3. Hero Section:
+   - Title: "Enterprise Level Data Security & Database Maintenance"
+   - CTA: "Free Security Audit", "Get Consultation"
+
+4. What is Data Optimization
+5. What is Database Maintenance
+6. Data Security Overview
+
+7. Our Core Services:
+   - Database Optimization
+   - Query Performance Tuning
+   - Cloud Database Management
+   - Backup Automation
+   - Disaster Recovery
+   - DDoS Protection
+   - Malware Protection
+   - Firewall Setup
+   - Penetration Testing
+
+8. Supported Databases:
+   - MySQL
+   - PostgreSQL
+   - SQL Server
+   - MongoDB
+   - Firebase
+   - Oracle
+
+9. Security Standards We Follow:
+   - ISO 27001
+   - SOC 2
+   - HIPAA
+   - PCI-DSS
+
+10. Backup & Recovery Process
+11. 24/7 Monitoring System
+12. Role-Based Access Control (RBAC)
+13. Encryption Standards (AES-256, TLS 1.3)
+14. Data Loss Prevention Policies
+15. Cloud Security (AWS, Azure, GCP)
+16. On-Premise Security
+17. Risk Assessment Workflow
+18. Maintenance Plans (Basic, Pro, Enterprise)
+19. Industries We Serve (Grid)
+20. FAQ Section
+21. Contact Consultation Form
+22. Floating WhatsApp Button
+23. Floating Support Button
+24. Footer with Full Site Links
+
+TECH SEO:
+- Sitemap
+- robots.txt
+- Hreflang
+- Core Web Vitals optimized
+- Preload critical CSS
+
+DESIGN:
+- Cybersecurity theme
+- Animated icons
+- Page transition effects
+- CSS hover animations
+
+ACCESSIBILITY:
+- Semantic HTML
+- Screen-reader friendly
+- High contrast mode
+
