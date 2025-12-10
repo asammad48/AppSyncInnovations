@@ -2164,9 +2164,58 @@ footer::after {
 
 [dir="rtl"] {
   direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .container {
+  text-align: right;
+}
+
+[dir="rtl"] nav {
+  flex-direction: row-reverse;
 }
 
 [dir="rtl"] .nav-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-center {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .nav-right {
+  margin-left: 0;
+  margin-right: auto;
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .lang-switcher {
+  order: -1;
+}
+
+[dir="rtl"] .lang-options {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%) translateY(10px);
+}
+
+[dir="rtl"] .dropdown:hover .dropdown-menu {
+  transform: translateX(50%) translateY(0);
+}
+
+[dir="rtl"] .dropdown > a::after {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+[dir="rtl"] .top-bar-contact {
   flex-direction: row-reverse;
 }
 
@@ -2192,9 +2241,94 @@ footer::after {
   left: 24px;
 }
 
+[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .footer-links {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-links h4::after {
+  left: auto;
+  right: 0;
+}
+
 [dir="rtl"] .footer-links a:hover {
+  transform: translateX(-6px);
   padding-left: 0;
   padding-right: 8px;
+}
+
+[dir="rtl"] .footer-links a::before {
+  order: 1;
+}
+
+[dir="rtl"] .footer-about {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .hero-text {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-buttons {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .hero-stats {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .section-header {
+  text-align: center;
+}
+
+[dir="rtl"] .service-card {
+  text-align: right;
+}
+
+[dir="rtl"] .testimonial-card {
+  text-align: right;
+}
+
+[dir="rtl"] .testimonial-card::before {
+  left: auto;
+  right: 30px;
+}
+
+[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-bottom-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .social-links {
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .floating-buttons {
+    left: 12px;
+  }
+  
+  [dir="rtl"] .scroll-to-top {
+    left: 12px;
+  }
+  
+  [dir="rtl"] .nav-links {
+    transform: translateX(100%);
+  }
+  
+  [dir="rtl"] .nav-links.active {
+    transform: translateX(0);
+  }
 }
 
 .parallax-bg {
