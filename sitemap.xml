@@ -157,4 +157,62 @@
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>https://appsyncinnovations.com/data-security-db-maintenance/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appsyncinnovations.com/data-security-db-maintenance/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appsyncinnovations.com/es/seguridad-datos-mantenimiento-bd/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://appsyncinnovations.com/fr/securite-donnees-maintenance-bd/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://appsyncinnovations.com/pt/seguranca-dados-manutencao-bd/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://appsyncinnovations.com/ca/seguretat-dades-manteniment-bd/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://appsyncinnovations.com/ar/%D8%A7%D9%85%D9%86-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%82%D9%88%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://appsyncinnovations.com/ur/%DA%88%DB%8C%D9%B9%D8%A7-%D8%B3%DB%8C%DA%A9%DB%8C%D9%88%D8%B1%D9%B9%DB%8C-%DA%88%DB%8C%D9%B9%D8%A7%D8%A8%DB%8C%D8%B3-%D9%85%DB%8C%D9%86%D9%B9%DB%8C%D9%86%D9%86%D8%B3/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://appsyncinnovations.com/de/datensicherheit-datenbankwartung/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://appsyncinnovations.com/tr/veri-guvenligi-veritabani-bakimi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://appsyncinnovations.com/id/keamanan-data-pemeliharaan-database/"/>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://appsyncinnovations.com/es/seguridad-datos-mantenimiento-bd/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://appsyncinnovations.com/fr/securite-donnees-maintenance-bd/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://appsyncinnovations.com/pt/seguranca-dados-manutencao-bd/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://appsyncinnovations.com/ca/seguretat-dades-manteniment-bd/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://appsyncinnovations.com/de/datensicherheit-datenbankwartung/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://appsyncinnovations.com/tr/veri-guvenligi-veritabani-bakimi/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://appsyncinnovations.com/id/keamanan-data-pemeliharaan-database/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
