@@ -2175,6 +2175,10 @@ footer::after {
   flex-direction: row-reverse;
 }
 
+[dir="rtl"] .logo {
+  order: 1;
+}
+
 [dir="rtl"] .nav-links {
   flex-direction: row-reverse;
 }
@@ -2188,7 +2192,7 @@ footer::after {
 [dir="rtl"] .nav-right {
   margin-left: 0;
   margin-right: auto;
-  flex-direction: row-reverse;
+  order: -1;
 }
 
 [dir="rtl"] .lang-switcher {
