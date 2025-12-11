@@ -2176,7 +2176,9 @@ footer::after {
 }
 
 [dir="rtl"] .logo {
-  order: 1;
+  order: 2;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 [dir="rtl"] .nav-links {
@@ -2191,12 +2193,16 @@ footer::after {
 
 [dir="rtl"] .nav-right {
   margin-left: 0;
-  margin-right: auto;
+  margin-right: 0;
   order: -1;
 }
 
 [dir="rtl"] .lang-switcher {
   order: -1;
+}
+
+[dir="rtl"] .mobile-menu-btn {
+  order: 0;
 }
 
 [dir="rtl"] .lang-options {
