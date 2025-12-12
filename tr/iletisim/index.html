@@ -71,71 +71,73 @@
     </div>
   </header>
 
-  <section class="page-hero">
+<section class="page-header">
     <div class="container">
-      <h1>İletişim</h1>
-      <p>Sorularınız için bize ulaşın</p>
+      <h1>Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="/">Home</a> <span>/</span> <span>Contact</span>
+      </div>
     </div>
   </section>
 
-  <section class="contact-section" style="padding: 5rem 0;">
+  <section class="content-section">
     <div class="container">
-      <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <select name="service">
+              <option value="">Select a Service</option>
+              <option value="software">Software Development</option>
+              <option value="app">App Development</option>
+              <option value="web">Web Development</option>
+              <option value="lead">Lead Generation</option>
+              <option value="call">Call Center</option>
+              <option value="other">Other</option>
+            </select>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
         <div class="contact-info">
-          <h2>Bize Ulaşın</h2>
-          <p>Projeleriniz hakkında konuşmak ister misiniz? Formu doldurun veya doğrudan bizimle iletişime geçin.</p>
-          
-          <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; margin: 2rem 0;">
-            <div class="contact-icon" style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">📍</div>
+          <h3>Get in Touch</h3>
+          <div class="contact-info-item">
+            <div class="icon">📍</div>
             <div>
-              <h4>Adres</h4>
-              <p>123 Innovation Drive, Tech City, TC 12345</p>
+              <h4>Address</h4>
+              <p>123 Innovation Street, Tech City, TC 12345</p>
             </div>
           </div>
-          
-          <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; margin: 2rem 0;">
-            <div class="contact-icon" style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">📞</div>
+          <div class="contact-info-item">
+            <div class="icon">📞</div>
             <div>
-              <h4>Telefon</h4>
+              <h4>Phone</h4>
               <p>+1 (555) 123-4567</p>
             </div>
           </div>
-          
-          <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; margin: 2rem 0;">
-            <div class="contact-icon" style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">✉️</div>
+          <div class="contact-info-item">
+            <div class="icon">✉️</div>
             <div>
-              <h4>E-posta</h4>
+              <h4>Email</h4>
               <p>info@appsyncinnovations.com</p>
             </div>
           </div>
-        </div>
-        
-        <div class="contact-form">
-          <form action="#" method="POST">
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-              <label for="name">Ad Soyad</label>
-              <input type="text" id="name" name="name" required placeholder="Adınız Soyadınız" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: var(--radius);">
+          <div class="contact-info-item">
+            <div class="icon">🕐</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
             </div>
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-              <label for="email">E-posta</label>
-              <input type="email" id="email" name="email" required placeholder="ornek@sirket.com" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: var(--radius);">
-            </div>
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-              <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" placeholder="+90 555 123 4567" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: var(--radius);">
-            </div>
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-              <label for="message">Mesajınız</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Projeniz hakkında bize bilgi verin..." style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: var(--radius);"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Mesaj Gönder</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
+<footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
