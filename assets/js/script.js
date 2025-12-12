@@ -170,25 +170,31 @@ document.addEventListener('DOMContentLoaded', function() {
         
         langDropdown.classList.remove('open');
         
-        const currentPath = window.location.pathname;
-        const pathParts = currentPath.split('/').filter(p => p);
-        const langs = ['es', 'fr', 'pt', 'ca', 'ar', 'ur', 'de', 'id', 'tr'];
-        
-        if (langs.includes(pathParts[0])) {
-          pathParts.shift();
-        }
-        
-        let newPath;
-        if (lang === 'en') {
-          newPath = '/' + pathParts.join('/');
+        if (url) {
+          let targetUrl = url.startsWith('/') ? url : '/' + url;
+          if (!targetUrl.endsWith('/') && !targetUrl.includes('.')) targetUrl += '/';
+          window.location.href = targetUrl;
         } else {
-          newPath = '/' + lang + '/' + pathParts.join('/');
+          const currentPath = window.location.pathname;
+          const pathParts = currentPath.split('/').filter(p => p);
+          const langs = ['es', 'fr', 'pt', 'ca', 'ar', 'ur', 'de', 'id', 'tr'];
+          
+          if (langs.includes(pathParts[0])) {
+            pathParts.shift();
+          }
+          
+          let newPath;
+          if (lang === 'en') {
+            newPath = '/' + pathParts.join('/');
+          } else {
+            newPath = '/' + lang + '/' + pathParts.join('/');
+          }
+          
+          if (newPath === '/') newPath = '/';
+          else if (!newPath.endsWith('/')) newPath += '/';
+          
+          window.location.href = newPath;
         }
-        
-        if (newPath === '/') newPath = '/';
-        else if (!newPath.endsWith('/')) newPath += '/';
-        
-        window.location.href = newPath;
       });
     });
   }
