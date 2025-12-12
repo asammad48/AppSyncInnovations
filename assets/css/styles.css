@@ -1215,7 +1215,7 @@ section {
 footer {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: var(--white);
-  padding: 100px 0 40px;
+  padding: 50px 0 25px;
   position: relative;
   overflow: hidden;
 }
@@ -1244,16 +1244,16 @@ footer::after {
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 60px;
-  margin-bottom: 60px;
+  gap: 30px;
+  margin-bottom: 30px;
   position: relative;
   z-index: 1;
 }
 
 .footer-about .logo {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   display: inline-flex;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .footer-about .logo .logo-icon {
@@ -1272,9 +1272,9 @@ footer::after {
 
 .footer-about p {
   color: rgba(255,255,255,0.55);
-  margin-bottom: 28px;
-  line-height: 1.9;
-  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .social-links {
@@ -1283,16 +1283,16 @@ footer::after {
 }
 
 .social-links a {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: var(--transition);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: rgba(255,255,255,0.7);
 }
@@ -1306,8 +1306,8 @@ footer::after {
 }
 
 .footer-links h4 {
-  margin-bottom: 28px;
-  font-size: 1rem;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1330,7 +1330,7 @@ footer::after {
 .footer-links ul {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .footer-links a {
@@ -1339,8 +1339,8 @@ footer::after {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
+  gap: 6px;
+  font-size: 0.85rem;
 }
 
 .footer-links a::before {
@@ -1366,12 +1366,12 @@ footer::after {
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
-  padding-top: 35px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgba(255,255,255,0.4);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   position: relative;
   z-index: 1;
 }
