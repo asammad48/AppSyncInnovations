@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const currentPath = window.location.pathname;
         const pathParts = currentPath.split('/').filter(p => p);
-        const langs = ['es', 'fr', 'pt', 'ca', 'ar', 'ur'];
+        const langs = ['es', 'fr', 'pt', 'ca', 'ar', 'ur', 'de', 'id', 'tr'];
         
         if (langs.includes(pathParts[0])) {
           pathParts.shift();
