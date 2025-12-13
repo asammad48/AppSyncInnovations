@@ -41,7 +41,7 @@ LANGUAGES = {
             'free-consultation': 'ar/استشارة-مجانية',
             'request-quote': 'ar/طلب-عرض-سعر',
             'book-a-call': 'ar/حجز-مكالمة',
-            'lead-vendor-legal': 'ar/قانون-بائع-العملاء-المحتملين',
+            'lead-vendor-legal': 'ar/قانوني-مورد-العملاء',
         }
     },
     'es': {
@@ -111,7 +111,7 @@ LANGUAGES = {
             'free-consultation': 'fr/consultation-gratuite',
             'request-quote': 'fr/demande-devis',
             'book-a-call': 'fr/reserver-appel',
-            'lead-vendor-legal': 'fr/legal-fournisseur-leads',
+            'lead-vendor-legal': 'fr/mentions-legales-fournisseur',
         }
     },
     'pt': {
@@ -251,7 +251,7 @@ LANGUAGES = {
             'free-consultation': 'tr/ucretsiz-danismanlik',
             'request-quote': 'tr/teklif-iste',
             'book-a-call': 'tr/gorusme-planla',
-            'lead-vendor-legal': 'tr/lead-saglayici-yasal',
+            'lead-vendor-legal': 'tr/satis-ortagi-yasal',
         }
     },
     'id': {
