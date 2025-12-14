@@ -16,6 +16,9 @@ A multilingual static website for AppSync Innovations - a SaaS company offering 
 /ca/                  - Catalan pages
 /ar/                  - Arabic pages (RTL)
 /ur/                  - Urdu pages (RTL)
+/de/                  - German pages
+/tr/                  - Turkish pages
+/id/                  - Indonesian pages
 ```
 
 ## Languages Supported
@@ -26,6 +29,9 @@ A multilingual static website for AppSync Innovations - a SaaS company offering 
 - Catalan (/ca/)
 - Arabic (/ar/) - RTL
 - Urdu (/ur/) - RTL
+- German (/de/)
+- Turkish (/tr/)
+- Indonesian (/id/)
 
 ## Pages
 - Homepage
@@ -36,6 +42,7 @@ A multilingual static website for AppSync Innovations - a SaaS company offering 
 - Legal: Privacy Policy, Terms & Conditions, Refund Policy, Cookie Policy, GDPR Compliance, Lead Vendor Legal
 
 ## Recent Updates (December 2025)
+- Completed full German translation of all 29 pages in /de/ directory
 - Enhanced RTL support for Arabic (ar) and Urdu (ur) with proper navigation and footer translations
 - Added AI Development service page (/ai-development/)
 - Added SEO Services page (/seo-services/)
