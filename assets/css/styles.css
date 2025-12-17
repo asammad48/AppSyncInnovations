@@ -282,6 +282,7 @@ nav {
   padding: 10px 16px;
   color: var(--dark);
   border-radius: 8px;
+  white-space: nowrap;
   font-size: 0.95rem;
 }
 
@@ -550,6 +551,7 @@ nav {
 
 .lang-options li .lang-label {
   flex: 1;
+  white-space: nowrap;
 }
 
 .hero {
