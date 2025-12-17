@@ -42,6 +42,7 @@ A multilingual static website for AppSync Innovations - a SaaS company offering 
 - Legal: Privacy Policy, Terms & Conditions, Refund Policy, Cookie Policy, GDPR Compliance, Lead Vendor Legal
 
 ## Recent Updates (December 2025)
+- Completed full Indonesian translation of all 29 pages in /id/ directory with proper navigation, footer, and content translations
 - Completed full German translation of all 29 pages in /de/ directory
 - Enhanced RTL support for Arabic (ar) and Urdu (ur) with proper navigation and footer translations
 - Added AI Development service page (/ai-development/)
